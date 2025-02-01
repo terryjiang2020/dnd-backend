@@ -45,3 +45,19 @@ The intent of this starter is to be really slim so it's not a nightmare to remov
 ## What to do next
 
 Adapt the configuration to your needs and start coding!
+
+This project is planned to include the following features:
+
+- Monster searching and filtering
+- Spell searching and filtering
+- Rule searching and filtering
+- Customised character creation
+- Customised monster creation
+- Customised spell creation
+- Encounter generation
+- Encounter difficulty estimation
+- More features might be included in future
+
+## License
+
+MIT

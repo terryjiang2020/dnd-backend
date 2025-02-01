@@ -1,14 +1,14 @@
 {
   "name": "node-ts-starter",
   "version": "4.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "author": "Horus Lugo",
   "license": "MIT",
   "scripts": {
-    "dev": "tsnd --respawn --files -r @babel/register --inspect -- src/index.ts",
+    "dev": "tsnd --respawn --files -r @babel/register --inspect -- src/app.ts",
     "build": "babel ./src -d ./dist --extensions .ts --copy-files",
     "typecheck": "tsc",
-    "start": "node dist/index.js",
+    "start": "node dist/app.js",
     "lint:base": "eslint --ext .js,.json,.ts",
     "lint": "yarn lint:base src",
     "prepare": "simple-pre-commit"
@@ -26,6 +26,8 @@
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-typescript": "^7.16.5",
     "@babel/register": "^7.16.5",
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^5.0.0",
     "@types/node": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
@@ -40,5 +42,9 @@
   },
   "engines": {
     "node": ">=16"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.2"
   }
 }
